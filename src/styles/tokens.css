@@ -4,20 +4,22 @@
  * 값의 출처는 항상 DESIGN.md 가 우선입니다 (문서 먼저, 코드 다음).
  */
 :root {
-  /* 컬러 — 잉크+페이퍼 모노크롬 + 테라코타 한 점 (2026-07 브랜드 피봇) */
-  --brand-primary: #1A1A1A;        /* 잉크 블랙 — 기둥색(제목·구조·주요 버튼·히어로) */
-  --brand-primary-dark: #000000;   /* 호버·가장 짙은 면 */
-  --brand-primary-light: #555555;  /* 보조 정보 */
-  --brand-accent: #C05621;         /* 테라코타 — 한 점 강조 (화면당 한두 점) */
+  /* 컬러 — 다크 에디토리얼: 니어블랙 캔버스 + 웜 오프화이트 + 테라코타 한 점 (2026-07 다크 피봇)
+   * 주의: 다크 반전이라 primary/text 는 '밝은 전경색'을 의미합니다(제목·본문은 밝게).
+   * bg-primary/text-card 쌍(배지·버튼)은 밝은 칠+어두운 글자로 함께 뒤집혀 그대로 읽힙니다. */
+  --brand-primary: #F4F1EA;        /* 웜 오프화이트 — 전경 기둥색(제목·로고·밝은 칠 배지/버튼) */
+  --brand-primary-dark: #FFFFFF;   /* 호버·가장 밝은 면 */
+  --brand-primary-light: #B8B2A8;  /* 보조 정보 */
+  --brand-accent: #C05621;         /* 테라코타 — 한 점 강조 (화면당 한두 점). 유일한 유채색 */
   --brand-accent-dark: #A03F1C;
-  --brand-accent-light: #E8754A;
-  --brand-bg: #F4F1EA;             /* 웜 페이퍼 — 기본 캔버스 (순백 금지) */
-  --brand-bg-card: #FAF8F3;        /* 카드·패널 표면 (따뜻한 톤) */
-  --brand-text: #1A1A1A;           /* 본문 잉크 */
-  --brand-text-sub: #57534E;       /* 보조 텍스트·캡션 (웜 그레이) */
-  --brand-text-muted: #8A8378;     /* 장식 전용 — 본문 금지 (웜 그레이) */
-  --brand-border: #E5E1D8;         /* 웜 라이트 보더 */
-  --brand-border-dark: #CFC9BC;    /* 웜 보더 */
+  --brand-accent-light: #E8754A;   /* 밝은 강조 (다크 위 소형 라벨·아이브로) */
+  --brand-bg: #141414;             /* 니어블랙 — 기본 캔버스 (순수 #000 금지) */
+  --brand-bg-card: #1E1E1E;        /* 카드·패널 표면 (살짝 든 다크) */
+  --brand-text: #EDEAE3;           /* 본문 — 웜 오프화이트 */
+  --brand-text-sub: #B0AAA0;       /* 보조 텍스트·캡션 (라이트 웜 그레이) */
+  --brand-text-muted: #7C766C;     /* 장식 전용 — 본문 금지 (미드 웜 그레이) */
+  --brand-border: #2E2A26;         /* 다크 웜 보더 */
+  --brand-border-dark: #423D37;    /* 조금 밝은 다크 보더 */
 
   /* 모서리 (DESIGN.md: 8~12px) */
   --brand-radius-card: 12px;
