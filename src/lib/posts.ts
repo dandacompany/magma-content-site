@@ -30,7 +30,7 @@ export function getAllPosts(): PostMeta[] {
     .map((f) => readPostFile(f))
     .filter((p): p is Post => p !== null && !p.draft)
     .sort((a, b) => (a.date === b.date ? (a.slug < b.slug ? 1 : -1) : a.date < b.date ? 1 : -1))
-    .map(({ content: _content, ...meta }) => meta);
+    .map(({ content, ...meta }) => meta);
 }
 
 /** slug 로 글 1건. draft 도 반환하므로 호출부에서 draft 를 걸러야 한다. 없으면 null. */
